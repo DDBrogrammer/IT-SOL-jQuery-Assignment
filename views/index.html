@@ -33,16 +33,16 @@
 
         <!-- Text input -->
         <div class="form-outline mb-4">
-          <input type="text" id="form6Example1" class="form-control" placeholder="Name" name="name"/>
+          <input type="text" id="f-name" class="form-control" placeholder="Name" name="name"/>
         </div>
         <div class="form-outline mb-4">
-          <input type="date" id="form6Example2" class="form-control" placeholder="Birthday" name="birthday" />
+          <input type="date" id="f-birthday" class="form-control" placeholder="Birthday" name="birthday" />
         </div>
         <div class="form-outline mb-4">
-          <input type="number" id="form6Example3" class="form-control" placeholder="Mobile Phone" name="phone" />
+          <input type="number" id="f-mobile-phone" class="form-control" placeholder="Mobile Phone" name="phone" />
         </div>
         <div class="form-outline mb-4">
-          <input type="text" id="form6Example4" class="form-control" placeholder="Hometown" name="hometown" />
+          <input type="text" id="f-hometown" class="form-control" placeholder="Hometown" name="hometown" />
         </div>
 
         <button type="submit" class="btn btn-primary btn-block mb-4" style="background-color: rgb(16,201,195); border-color:rgb(16,201,195); ">Save</button>
@@ -50,14 +50,13 @@
       <div class="col-2"></div>
     </div>
 
-
-
   </div>
+
   <div >
-    <div class=" col-4 justify-content-center ">
+    <div class=" col-4 justify-content-center" id="function-container">
       <div class="px-5 py-3 square centerd">
-        <input class="mx-3 btn btn-primary" id="Delete" onclick="deleteStudent()" type="button" value="Delete" >
-        <input class=" mx-3 btn btn-primary" id="Edit" onclick="" type="button" value="Edit" >
+        <input class="mx-3 btn btn-primary" id="delete" disabled onclick="deleteStudent()" type="button" value="Delete" >
+        <input class=" mx-3 btn btn-primary" id="edit" disabled onclick="" type="button" value="Edit" >
       </div>
 
     </div>
@@ -66,7 +65,7 @@
   <div class="d-flex ">
     <div class="col-2"></div>
     <div class="col-8">
-      <table class="col-10 table table-hover">
+      <table class="col-10 table table-hover" >
         <thead>
         <tr>
           <th>   </th>
